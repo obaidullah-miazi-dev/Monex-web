@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Monex</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,26 +15,62 @@
 <body>
 
     <!-- header section  -->
-    <header>
+    <header class="w-[80%] m-auto">
         <!-- nav menu  -->
-        <nav class="  bg-white outline-1 outline-[#CAF0F8]  rounded-[9999px] p-2.5 px-5 w-[80%] m-auto flex items-center justify-between mt-6">
+        <nav
+            class="  bg-white outline-1 outline-[#CAF0F8]  rounded-[9999px] p-2.5 px-5  flex items-center justify-between mt-6">
             <!-- logo -->
             <div>
                 <img class="w-[100px] sm:w-[200px]" src="images/logo.png" alt="">
             </div>
 
             <!-- nav menus -->
-            <div class="poppins">
+            <div>
                 <a class="mr-10 hidden lg:inline" href="">Home</a>
                 <a class="mr-10 hidden lg:inline" href="">About</a>
                 <a class="mr-10 hidden lg:inline" href="">Service</a>
                 <a class="mr-10 hidden lg:inline" href="">Contact</a>
 
-                <button class="bg-color-gradient rounded-[9999px] text-white text-[0.6rem] sm:text-[1rem] py-[0.4rem] px-[0.8rem] sm:py-[10px] sm:px-[18px]">Download App</button>
+                <button
+                    class="bg-color-gradient rounded-[9999px] text-white text-[0.6rem] sm:text-[1rem] py-[0.4rem] px-[0.8rem] sm:py-[10px] sm:px-[18px]">
+                    Download
+                    App <i class="fa-solid fa-download ml-1"></i></button>
             </div>
         </nav>
 
-        
+        <!-- banner section  -->
+        <section class="mt-12 outline-1 outline-[#CAF0F8] lg:flex lg:items-center justify-between bg-white px-8 pt-10  sm:px-6 rounded-xl">
+            <!-- banner content  -->
+            <div class="text-center lg:text-left">
+                <p class="text-[0.7rem] font-medium 2xl:text-[1rem] xl:text-[0.8rem]">
+                    Experience Effortless Payments Anytime
+                </p>
+                <h1 class="text-[1.8rem] xl:text-[2.5rem] 2xl:text-[3rem] font-bold">
+                    Manage All Your <br class="hidden xl:inline"> Transactions in <br class="hidden 2xl:inline"> One
+                    Place
+                </h1>
+                <p class="text-[0.7rem] xl:text-[0.8rem] 2xl:text-[1rem] font-medium text-gray-700 mb-5">
+                    From online payments to secure top-ups — Monex makes your financial journey fast,<br
+                        class="hidden xl:inline"> simple, and secure.
+                </p>
+
+                <div>
+                    <button
+                        class="bg-color-gradient rounded-[9999px] text-white text-[0.6rem] sm:text-[1rem] py-[0.4rem] px-[0.8rem] sm:py-[0.8rem] sm:px-[1.15rem] mr-2">Start
+                        Now <i class="fa-solid fa-play ml-1"></i> </button>
+
+                    <button
+                        class=" border-[1px] rounded-[9999px] text-color text-[0.6rem] sm:text-[1rem] py-[0.3rem] px-[0.8rem] sm:py-[0.6rem] sm:px-[0.8rem]">Learn
+                        More</button>
+                </div>
+
+            </div>
+
+            <!-- banner image  -->
+            <div class="mt-7 lg:w-[45%]">
+                <img class="w-[100%]" src="images/banner-man-img.png" alt="">
+            </div>
+        </section>
     </header>
 
 
